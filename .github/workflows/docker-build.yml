@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Copy .env.local
-        run: cp .env.local ./.env.local
+        run: cp pamelamarku/mongodb-mongoose-test/env.local ./.env.local
       
       - name: Build and push Docker image
         run: |
